@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Similarity Results</title>
+</head>
+<body>
+    <h1>Batch Similarity Results</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Job ID</th>
+                <th>Similarity Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in similarity_scores %}
+                <tr>
+                    <td>{{ result['job_id'] }}</td>
+                    <td>{{ result['similarity_score'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

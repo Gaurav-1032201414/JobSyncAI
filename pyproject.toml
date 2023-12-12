@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "capstoneproject finalfile"
+version = "0.1.0"
+description = ""
+authors = ["Gaurav-1032201414 <96720032+Gaurav-1032201414@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.0"
+beautifulsoup4 = "^4.12.2"
+pymongo = "^4.6.1"
+cors = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.form-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+form input,
+textarea {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 1em;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 10px ;
+}
+
+.name{
+    flex: 0.5;
+}
+.email{
+    flex: 0.5;
+}
+
+.send{
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: #001122;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+   .form-inputs{
+    flex-direction: column;
+   }
+  }

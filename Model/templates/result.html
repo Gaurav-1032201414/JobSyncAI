@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similarity Scores</title>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Similarity Scores</h2>
+    <table>
+        <tr>
+            <th>Job ID</th>
+            <th>Similarity Score</th>
+        </tr>
+        {% for item in similarity_scores %}
+            <tr>
+                <td>{{ item['job_id'] }}</td>
+                <td>{{ item['similarity_score'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
